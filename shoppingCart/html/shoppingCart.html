@@ -34,7 +34,7 @@
               <br><br>
               <div class="order-sub-header">
                 <div class="titems"> 3 Items</div>
-                <div class="c_edit">Edit</div>
+                <a href="Edit" class="c_edit">Edit</a>
               </div>
               
               <div class="h_line1"></div>
@@ -59,11 +59,10 @@
                     <b><a href="">Joji - In Tounges Limited LP</a></b>
                   </div>
                   <div class="qpt">
-                    <div class="p-delete">
-                      <button>삭제</button>
-                    </div>
                     <div class="p-quantity">
-                      <button>1</button>
+                      <span class="minus">-</span>
+                      <span class="num">01</span>
+                      <span class="plus">+</span>
                     </div>
                     <div class="p-price">
                       <div>37,500</div>
@@ -85,11 +84,10 @@
                     <b><a href="">Joji - In Tounges Limited LP</a></b>
                   </div>
                   <div class="qpt">
-                    <div class="p-delete">
-                      <button>삭제</button>
-                    </div>
                     <div class="p-quantity">
-                      <button>1</button>
+                      <span class="minus">-</span>
+                      <span class="num">01</span>
+                      <span class="plus">+</span>
                     </div>
                     <div class="p-price">
                       <div>37,500</div>
@@ -110,11 +108,10 @@
                     <b><a href="">Joji - In Tounges Limited LP</a></b>
                   </div>
                   <div class="qpt">
-                    <div class="p-delete">
-                      <button>삭제</button>
-                    </div>
                     <div class="p-quantity">
-                      <button>1</button>
+                      <span class="minus">-</span>
+                      <span class="num">01</span>
+                      <span class="plus">+</span>
                     </div>
                     <div class="p-price">
                       <div>37,500</div>
@@ -147,6 +144,7 @@
                     <div class="chkout-total-t">TOTAL</div>
                     <div class="chkout-total-price">175,500원</div>
                   </div>
+             
                   <div class="chkout-button">
                     <button class="chkout-button1">계속 쇼핑하기</button>
                     <button class="chkout-button2">주문하기</button>
@@ -177,6 +175,37 @@
         </div>
         </div>
     </div>
+<script>
+  const plus = document.querySelectorAll(".plus"),
+  minus = document.querySelectorAll(".minus"),
+  num = document.querySelectorAll(".num");
 
+  // let a =1;
+
+  console.log(plus);
+  
+  for(let i=0; i<plus.length; i++){
+    let a = parseInt(num[i].innerText);
+    plus[i].addEventListener("click", () =>{
+      a++;
+      a = (a<10) ? "0" + a : a;
+      num[i].innerText = a;
+      console.log(a);
+    });
+  }
+
+  
+  for(let i=0; i<minus.length; i++){
+    minus[i].addEventListener("click", ()=>{
+    let a = parseInt(num[i].innerText);
+    if(a>1){
+      a--;
+      a = (a<10) ? "0" + a : a;
+      num[i].innerText = a;
+    }
+  })
+  }
+
+</script>
 </body>
 </html>
