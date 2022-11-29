@@ -21,7 +21,7 @@
         </div>
         <br><br> <br> <br> <br>
         <div class="ab">
-        <div id="contentsWrap" class="contents-wrap">
+        <div class="contents-wrap">
             <div class="order-container" >
               <div class="order-header">
                 <h1 class="ctitle">Cart</h1>
@@ -42,13 +42,13 @@
 
               <div class="pd-details">
                 <div class="p-detail">PRODUCT DETAILS</div>
-                <div class="qpt">
-                  <div>QUANTITY</div>
-                  <div>PRICE</div>
-                  <div>TOTAL</div>
-                </div>
-              </div>
-              <br>
+                  <div class="qpt">
+                    <div class="qpt-child">QUANTITY</div>
+                    <div class="qpt-child">PRICE</div>
+                    <div class="qpt-child">TOTAL</div>
+                  </div>
+                </div> 
+                <br>
 
               <div class="deli-products">
                 <div class="p-img">
@@ -64,11 +64,11 @@
                       <span class="num">01</span>
                       <span class="plus">+</span>
                     </div>
-                    <div class="p-price">
-                      <div>37,500</div>
+                    <div>
+                      <div class="p_price">37500</div>
                     </div>
-                    <div class="p-price">
-                      <div>37,500</div>
+                    <div class="t_price">
+                      <div>37500</div>
                     </div>
                   </div>
                   
@@ -89,11 +89,11 @@
                       <span class="num">01</span>
                       <span class="plus">+</span>
                     </div>
-                    <div class="p-price">
-                      <div>37,500</div>
+                    <div>
+                      <div class="p_price">37500</div>
                     </div>
-                    <div class="p-price">
-                      <div>37,500</div>
+                    <div class="t_price">
+                      <div>37500</div>
                     </div>
                   </div>
                 </div>
@@ -113,11 +113,11 @@
                       <span class="num">01</span>
                       <span class="plus">+</span>
                     </div>
-                    <div class="p-price">
-                      <div>37,500</div>
+                    <div>
+                      <div class="p_price">37500</div>
                     </div>
-                    <div class="p-price">
-                      <div>37,500</div>
+                    <div class="t_price">
+                      <div>37500</div>
                     </div>
                   </div>
                   
@@ -133,7 +133,7 @@
                 <div class="chkout-box">
                   <div class="chkout-items">
                     <div class="chkout-total-items">ITEM 3</div>
-                    <div class="chkout-total-items-price">173,000원</div>
+                    <div class="chkout-total-items-price"><span class="Cprice">0</span>원</div>
                   </div>
                   <div class="shipping-fee">
                     <div class="chkout-shipping">SHIPPING</div>
@@ -142,7 +142,7 @@
                   <div class="h-line2"></div>
                   <div class="chkout-total">
                     <div class="chkout-total-t">TOTAL</div>
-                    <div class="chkout-total-price">175,500원</div>
+                    <div class="chkout-total-price"><span class="TTprice">0</span>원</div>
                   </div>
              
                   <div class="chkout-button">
@@ -175,37 +175,6 @@
         </div>
         </div>
     </div>
-<script>
-  const plus = document.querySelectorAll(".plus"),
-  minus = document.querySelectorAll(".minus"),
-  num = document.querySelectorAll(".num");
-
-  // let a =1;
-
-  console.log(plus);
-  
-  for(let i=0; i<plus.length; i++){
-    let a = parseInt(num[i].innerText);
-    plus[i].addEventListener("click", () =>{
-      a++;
-      a = (a<10) ? "0" + a : a;
-      num[i].innerText = a;
-      console.log(a);
-    });
-  }
-
-  
-  for(let i=0; i<minus.length; i++){
-    minus[i].addEventListener("click", ()=>{
-    let a = parseInt(num[i].innerText);
-    if(a>1){
-      a--;
-      a = (a<10) ? "0" + a : a;
-      num[i].innerText = a;
-    }
-  })
-  }
-
-</script>
+<script src="../js/shoppingbag.js"></script>
 </body>
 </html>
