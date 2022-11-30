@@ -1,0 +1,230 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: "SB Aggro";
+    color: #343434;
+
+  }
+
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+
+  html {
+    background-color: #f9f5f0;
+  }
+
+  div{
+    display: block;
+  }
+
+  .container{
+    width: 1920px;
+  }
+
+
+
+  .top {
+    margin-left: 910px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 350px 50px 64px 50px 20px;
+    gap: 50px;
+    align-items: center;
+  }
+
+  #logo{
+    width: 100px;
+  }
+  .top li {
+    font-weight: 300;
+  }
+.top li:hover, .to li:hover{
+  color: #f85e24;
+  cursor: pointer;
+}
+
+.container {
+        width: 1920px;
+        
+      }
+
+.order{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentsWrap{
+  padding: 30px;
+  width: 1360px;
+  display: grid;
+  justify-content: center;
+}
+
+.order-container{
+  padding: 10px;
+ 
+}
+
+.od-header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+.orderStep{
+  display: flex;
+  margin-top: 20px;
+}
+
+.orderStep li{
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  color: rgb(192,192,192);
+}
+
+.orderStep li:after{
+   content: '\00a0\00a0\00a0\00a0>';
+}
+
+.orderStep .active{
+  color: #f85e24;
+}
+
+.orderStep li::before{
+  content: "\00a0 \00a0 \00a0 \00a0";
+}
+
+
+.orderStep li:last-child::after{
+  content: none;
+}
+.pd-info-box{
+  width: 1360px;
+  border-collapse: collapse;
+}
+
+
+.pd-info-box-header th{
+  font-size: smaller;
+  color: rgb(192,192,192);
+  border-bottom: 1px solid RGB(192,192,192);
+  padding: 10px;
+}  
+
+.pd-info-box td{
+  font-size: 12px;
+  padding: 20px 20px 20px 20px;
+  border-bottom:1px solid rgb(192,192,192) ;
+ 
+}
+
+.pd-info-box td:nth-child(1){
+  width: 100px;
+}
+.pd-info-box td:nth-child(3){
+  border-left: 1px solid rgb(192,192,192);
+  text-align: center;
+}
+
+.shippingFee{
+  padding-left: 20px;
+}
+.shipping-fee{
+  border-left: 1px solid rgb(192,192,192);
+}
+.hline1{
+  border-bottom: 1.5px solid rgb(192,192,192);
+}
+
+.defaultOrNew{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid rgb(192,192,192);
+  border-top: 1px solid black;
+  padding: 10px;
+}
+
+.default{
+  text-align: center;
+  border-right: 1px solid rgb(192,192,192);
+}
+
+.new{
+  text-align: center;
+  color: rgb(192,192,192);
+}
+
+.deli-info-box{
+  width: 1000px;
+  
+}
+
+label{
+  display: block;
+  margin: 20px;
+}
+
+label>span, label>button{
+ font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 13px;
+    
+};
+
+.deli-info-box .orderForm .required{
+  color: red;
+}
+
+.deli-info-box .orderForm input[type="text"], input[type="tel"]
+{
+  width: 40%;
+  height: 30px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #dadada;
+  color: #888;
+}
+
+.deli-info-box .orderForm .phone{
+  width: 50px;
+}
+
+.checkout-title{
+  padding: 20px;
+}
+
+.chkout-select-box{
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  
+  
+}
+
+.chkout-select-box .chkout-card{
+  border: 1px solid black;
+  width: 150px;
+  height: 40px;
+  padding: 10px;
+
+}
+.chkout-select-box .chkout-bank{
+  border: 1px solid rgb(192,192,192);
+  width: 150px;
+  height: 40px;
+  padding: 10px;
+
+}
