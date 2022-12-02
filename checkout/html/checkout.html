@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/checkout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
     <title>Seoul Vinyl</title>
     <style>
     
@@ -38,10 +39,9 @@
                             </ul>
                    </div>
                 </div>
-                <br><br>
+                <br><br><br>
 
                 <!--상품 정보-->
-                <div class="hline1"></div>
                 <div class="pd-info">
                         <table class="pd-info-box" >
                         <tr class="pd-info-box-header">
@@ -89,38 +89,41 @@
                         <div class="default">기존 배송지</div>
                         <div class="new">신규입력</div>
                     </div>
-                    <div class="orderForm">
+                   <div class="table-wrap">
+                        <div class="orderForm">
                         <form action="">
                             <label>
-                                <span class="name">수령인<span class="required">*
+                                <span >수령인<span class="required">*
                                 </span></span>
-                                <input type="text" class="name">
+                                <input type="name" class="name">
                             </label>
                             <label>
-                                <span class="adrress">배송지<span class="required">*</span>
+                                <span class="aa">배송지<span class="required">*</span>
                                 </span>
                                 <input type="text" class="address">
-                                <button>우편번호 조회</button>
+                                <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 조회" class="zipcode-btn">
                             </label>
                             <label>
-                                <span>&nbsp;</span>
+                                <span class="aa">&nbsp;</span>
                                 <input type="text" class="address">
                             </label>
                              <label>
-                                <span>&nbsp;</span>
+                                <span class="aa">&nbsp;</span>
                                 <input type="text" class="address">
                             </label>
                             <label >
-                                <span>연락처<span>*</span></span>
+                                <span class="aa">연락처<span class="required">*</span></span>
                                 <input type="tel" class="phone">
                                 <input type="tel" class="phone">
                                 <input type="tel" class="phone">
                             </label>
                             <label>
-                                <span>배송 시 요청사항</span>
+                                <span class="aa">배송 시 요청사항</span>
                                 <input type="text" class="deli-favor">
                             </label>
                         </form>
+
+                   </div>
                         <div class="hline1"></div>
                     </div>
                 </div>
@@ -132,20 +135,38 @@
                 <div class="hline1"></div>
 
                 <!--결제-->
+                <br>
                 <div class="chkout-select">
                     <div class="chkout-select-box">
                         <div class="chkout-card">신용/체크카드</div>
                         <div class="chkout-bank">무통장입금</div>
                     </div>
                 </div>
-
+                <br>
 
                 <div class="hline1"></div>
 
+                <!--약관동의-->
+                <div class="agree-title">
+                    <div class="agree-header">약관동의</div>
+                    <div class="agreement">
+                        <div class="agree-a">
+                            
+                            <input type="checkbox">
+                            <div class="order-agreement">주문 약관동의</div>
+                        </div>
+                        <div class="agree-b">
+                            <div class="agree-more">+</div>
+                        </div>
+                    </div>
+                </div>
+                <br>
 
-                <div class="agree-title"></div>
-                <div class="agree-box"></div>
-                <div class="last-select"></div>
+                <!--결제 or 취소-->
+                <div class="last-select">
+                    <button class="cancel">CANCEL</button>
+                    <button class="checkout">CHECKOUT</button>
+                </div>
 
          
 
@@ -153,5 +174,6 @@
             </div>
         </div>
     </div>
+    <script src="../js/zipcode.js"></script>
 </body>
 </html>
