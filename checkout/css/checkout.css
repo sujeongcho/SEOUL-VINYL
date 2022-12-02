@@ -110,7 +110,7 @@
   content: none;
 }
 .pd-info-box{
-  width: 1360px;
+  width: 1000px;
   border-collapse: collapse;
 }
 
@@ -145,6 +145,7 @@
 }
 .hline1{
   border-bottom: 1.5px solid rgb(192,192,192);
+  width: 1000px;
 }
 
 .defaultOrNew{
@@ -170,6 +171,14 @@
   
 }
 
+.required{
+  color: red;
+}
+
+.aa{
+  width:150px;
+}
+
 label{
   display: block;
   margin: 20px;
@@ -188,7 +197,7 @@ label>span, label>button{
   color: red;
 }
 
-.deli-info-box .orderForm input[type="text"], input[type="tel"]
+.deli-info-box .orderForm input[type="text"], input[type="tel"],  input[type="name"]
 {
   width: 40%;
   height: 30px;
@@ -199,7 +208,18 @@ label>span, label>button{
 }
 
 .deli-info-box .orderForm .phone{
-  width: 50px;
+  width: 70px;
+}
+
+.zipcode-btn{
+  height: 30px;
+  width: 100px;
+  font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 13px;
+  
 }
 
 .checkout-title{
@@ -208,10 +228,13 @@ label>span, label>button{
 
 .chkout-select-box{
   display: flex;
-  padding: 10px;
   gap: 10px;
-  
-  
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+  text-align: center;
 }
 
 .chkout-select-box .chkout-card{
@@ -226,5 +249,63 @@ label>span, label>button{
   width: 150px;
   height: 40px;
   padding: 10px;
-
 }
+
+.agreement{
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid rgb(186, 186, 186);
+  justify-content: space-between;
+}
+.agree-a{
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+.agree-more{
+  padding: 10px;
+}
+
+.agree-header{
+  padding: 20px;
+}
+
+.agree-header input[type="checkbox"]{
+  padding-left: 20px 0px 0px 20px;
+}
+
+.order-agreement{
+  font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 13px;
+}
+.last-select{
+  display: flex;
+}
+
+.cancel{
+  width: 500px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.checkout{
+  width: 500px;
+  height: 40px;
+  background-color: #f85e24;
+  color: white;
+  border: none;
+}
+
+
+
+
+
+
+
+
