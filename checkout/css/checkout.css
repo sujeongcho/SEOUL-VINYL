@@ -175,26 +175,36 @@
   color: red;
 }
 
-.aa{
-  width:150px;
+.orderForm label.aa{
+ width: 150px;
 }
 
 label{
-  display: block;
+  display: flex;
   margin: 20px;
 }
 
-label>span, label>button{
- font-family: 'GmarketSansMedium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-size: 13px;
+label> .aa{
+  display: flex;
+  width: 120px;
+}
+label>div, label>button{
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+  display: block
+  
     
 };
 
+
+
 .deli-info-box .orderForm .required{
   color: red;
+  width: 10px;
+  display: flex;
 }
 
 .deli-info-box .orderForm input[type="text"], input[type="tel"],  input[type="name"]
@@ -215,11 +225,11 @@ label>span, label>button{
   height: 30px;
   width: 100px;
   font-family: 'GmarketSansMedium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-size: 13px;
-  
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+  margin-left:20px ;
 }
 
 .checkout-title{
