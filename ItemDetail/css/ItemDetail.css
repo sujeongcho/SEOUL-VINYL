@@ -29,8 +29,48 @@
     margin: auto;
 }
 
+.itemBasicInfo{
+    display: block;
+    align-items: center;
+}
+
+
+.itemQandW{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.itemQuantity{
+    width: 80px;
+}
+
+.wishBtn{
+    width: 30px;
+}
+
+.chkoutSelectBtn{
+    display: flex;
+}
+
+.shoppingCartBtn{
+    width: 170px;
+    height: 30px;
+    background-color:  #f85e24;
+    border: none;
+    color: white;
+}
+
+.checkoutDirectlyBtn{
+    width: 170px;
+    height: 30px;
+    background-color: black;
+    color: white;
+
+}
+
 .itemImg > img{
     width: 320px;
-    height:484px;
+    height:480px;
 
 }
