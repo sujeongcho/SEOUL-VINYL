@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main2.css" />
+    <link href="https://webfontworld.github.io/sandbox/SBAggro.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <title>SEOUL VINYL</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-bar desktop">
+        <div class="logo-div">
+          <a href="main2.html"><img src="img/logo.png" id="logo" alt="logo" /></a>
+        </div>
+        <div class="top-bar-list">
+          <ul class="top">
+            <li class="top_list">
+              <a href="">LOGIN</a>
+            </li>
+            <li class="top_list">
+              <a href=""> CART </a>
+            </li>
+            <li class="sesarch_li">
+              <i class="fa-solid fa-magnifying-glass search"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="top-bar mobile hidden">
+        <div class="logo-div">
+          <a href="main2.html"><img src="img/logo.png" id="logo" alt="logo" /></a>
+        </div>
+        <div class="top"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+      </div>
+      <div class="warp">
+        <div class="menu">
+          <div class="menu_list">
+            <a href="">
+              <h1 class="menu_header">NEW</h1>
+            </a>
+          </div>
+          <div class="menu_list">
+            <h1 class="menu_header">VINYL</h1>
+            <div class="menu_contents hidden">
+              <a href="storekategorie.html">
+                <div class="menu_item">ALL</div>
+              </a>
+              <div class="menu_item">KOREAN</div>
+              <div class="menu_item">JAPANESE</div>
+              <div class="menu_item">JAZZ</div>
+              <div class="menu_item">ROCK/POP</div>
+              <div class="menu_item">ELECTRONICA</div>
+              <div class="menu_item">HIPHOP/SOUL</div>
+              <div class="menu_item">OST</div>
+            </div>
+          </div>
+          <div class="menu_list">
+            <h1 class="menu_header">SOUND</h1>
+            <div class="menu_contents hidden">
+              <div class="menu_item">ALL</div>
+              <div class="menu_item">TURNTABLE</div>
+              <div class="menu_item">SOUND BAR</div>
+              <div class="menu_item">PLATER</div>
+              <div class="menu_item">ETC.</div>
+            </div>
+          </div>
+          <div class="menu_list">
+            <h1 class="menu_header">GOODs</h1>
+            <div class="menu_contents hidden">
+              <div class="menu_item">ALL</div>
+              <div class="menu_item">POSTER</div>
+              <div class="menu_item">CUP</div>
+              <div class="menu_item">기타등등</div>
+              <div class="menu_item">기타등등</div>
+            </div>
+          </div>
+        </div>
+        <div class="contents">
+          <div class="main">
+            <div class="main_vinyl_contents wheel">
+              <div class="main_contents_right">
+                <div class="mood">
+                  <div>
+                    <h1 class="todays_mood">TODAY's <br />MOOD <br />LIST</h1>
+                  </div>
+                  <div class="play_btn_container">
+                    <div class="play_btn"><img id="pre" src="img/playbtn/pre.png" alt="" /></div>
+                    <div class="play_btn"><img id="stop" src="img/playbtn/stop.png" alt="" /></div>
+                    <div class="play_btn"><img id="next" src="img/playbtn/next.png" alt="" /></div>
+                  </div>
+                </div>
+              </div>
+              <div class="main_contents_center">
+                <div class="main_vinyl_img_lsit">
+                  <div class="main_vinyl_img">
+                    <img src="img/vinyl.png" id="vinyl" alt="vinyl" />
+                  </div>
+                </div>
+              </div>
+              <div class="main_contents_left"></div>
+            </div>
+            <div class="text_flow wheel">
+              <div class="text_flow_list">
+                <marquee class="text_flow_item" scrollamount="10"
+                  >SEOUL VINYL · LONG PLAY RECODE · SEOUL VINYL · LONG PLAY RECODE · SEOUL VINYL · LONG PLAY RECODE · SEOUL VINYL · LONG PLAY RECODE ·
+                </marquee>
+              </div>
+            </div>
+            <div class="new">
+              <div class="new_left">
+                <h1 id="newEng">NEW</h1>
+                <h1 id="newKor">신상품</h1>
+                <p id="newText">오직 서울 바이닐에서만 만날 수 있는 다양한 신상품을 소개합니다.</p>
+                <div class="new_btn">
+                  <div id="new_pre_btn">
+                    <div>
+                      <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                  </div>
+                  <div id="new_next_btn">
+                    <div>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="new_right">
+                <div class="new_item_list">
+                  <div class="new_item">
+                    <img src="img/NEW.png" alt="" />
+                    <h1 id="new_title">TITEL</h1>
+                    <h1 id="new_singer">singer</h1>
+                    <h1 id="new_price">price</h1>
+                  </div>
+                  <div class="new_item">
+                    <img src="img/NEW.png" alt="" />
+                    <h1 id="new_title">TITEL</h1>
+                    <h1 id="new_singer">singer</h1>
+                    <h1 id="new_price">price</h1>
+                  </div>
+                  <div class="new_item">
+                    <img src="img/NEW.png" alt="" />
+                    <h1 id="new_title">TITEL</h1>
+                    <h1 id="new_singer">singer</h1>
+                    <h1 id="new_price">price</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="weekly_best">
+              <div class="weekly_best_header">
+                <h1>WEEKLY BEST</h1>
+              </div>
+              <div class="weekly_best_kategerie">
+                <div></div>
+                <div class="best_selection best_selected" id="best_vinyl">VINYL</div>
+                <div class="best_selection" id="best_sound">SOUND</div>
+                <div class="best_selection" id="best_goods">GOODs</div>
+              </div>
+              <div class="best_item_list">
+                <div class="best_item">
+                  <img src="img/NEW.png" alt="" class="best_item_img" />
+                  <h1 class="best_item_title">title</h1>
+                  <h1 class="best_item_singer">singer</h1>
+                  <h1 class="best_item_price">price</h1>
+                </div>
+                <div class="best_item">
+                  <img src="img/NEW.png" alt="" class="best_item_img" />
+                  <h1 class="best_item_title">title</h1>
+                  <h1 class="best_item_singer">singer</h1>
+                  <h1 class="best_item_price">price</h1>
+                </div>
+                <div class="best_item">
+                  <img src="img/NEW.png" alt="" class="best_item_img" />
+                  <h1 class="best_item_title">title</h1>
+                  <h1 class="best_item_singer">singer</h1>
+                  <h1 class="best_item_price">price</h1>
+                </div>
+                <div class="best_item">
+                  <img src="img/NEW.png" alt="" class="best_item_img" />
+                  <h1 class="best_item_title">title</h1>
+                  <h1 class="best_item_singer">singer</h1>
+                  <h1 class="best_item_price">price</h1>
+                </div>
+                <div class="best_item">
+                  <img src="img/NEW.png" alt="" class="best_item_img" />
+                  <h1 class="best_item_title">title</h1>
+                  <h1 class="best_item_singer">singer</h1>
+                  <h1 class="best_item_price">price</h1>
+                </div>
+                <div class="best_item">
+                  <img src="img/NEW.png" alt="" class="best_item_img" />
+                  <h1 class="best_item_title">title</h1>
+                  <h1 class="best_item_singer">singer</h1>
+                  <h1 class="best_item_price">price</h1>
+                </div>
+                <div class="best_item">
+                  <img src="img/NEW.png" alt="" class="best_item_img" />
+                  <h1 class="best_item_title">title</h1>
+                  <h1 class="best_item_singer">singer</h1>
+                  <h1 class="best_item_price">price</h1>
+                </div>
+                <div class="best_item">
+                  <img src="img/NEW.png" alt="" class="best_item_img" />
+                  <h1 class="best_item_title">title</h1>
+                  <h1 class="best_item_singer">singer</h1>
+                  <h1 class="best_item_price">price</h1>
+                </div>
+                <div class="best_item">
+                  <img src="img/NEW.png" alt="" class="best_item_img" />
+                  <h1 class="best_item_title">title</h1>
+                  <h1 class="best_item_singer">singer</h1>
+                  <h1 class="best_item_price">price</h1>
+                </div>
+                <div class="best_item">
+                  <img src="img/NEW.png" alt="" class="best_item_img" />
+                  <h1 class="best_item_title">title</h1>
+                  <h1 class="best_item_singer">singer</h1>
+                  <h1 class="best_item_price">price</h1>
+                </div>
+                <div class="best_item">
+                  <img src="img/NEW.png" alt="" class="best_item_img" />
+                  <h1 class="best_item_title">title</h1>
+                  <h1 class="best_item_singer">singer</h1>
+                  <h1 class="best_item_price">price</h1>
+                </div>
+                <div class="best_item">
+                  <img src="img/NEW.png" alt="" class="best_item_img" />
+                  <h1 class="best_item_title">title</h1>
+                  <h1 class="best_item_singer">singer</h1>
+                  <h1 class="best_item_price">price</h1>
+                </div>
+              </div>
+              <div class="store_view_more">
+                <h1>VIEW MORE</h1>
+                <div id="more_btn">
+                  <div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="vinyls_img"></div>
+            <div class="offline_store">
+              <div class="offline_store_left">
+                <div class="offline_store_header">
+                  <h1 id="off_header_eng">OFFLINE STORE</h1>
+                  <h1 id="off_header_kor">오프라인 스토어</h1>
+                </div>
+                <div class="offline_store_img">
+                  <img src="img/NEW.png" alt="" id="offline_store_img" />
+                </div>
+              </div>
+              <div class="offline_store_center">
+                <div id="offline_ex">제품들을 눈으로 직접 보고 구매할 수 있는 오프라인 스토어</div>
+                <h1 id="store_address">서울특별시 용산구 신흥로 30</h1>
+                <div id="open">
+                  <h1 id="store_open"><span>Vinyl Bar</span> 7pm - 2am</h1>
+                  <h1 id="bar_open"><span>Vinyl Shop</span> 1pm - 8pm</h1>
+                </div>
+              </div>
+              <div class="offline_store_map">
+                <div id="map"></div>
+              </div>
+            </div>
+            <div class="QnA">
+              
+            </div>
+          </div>
+          <div class="footer">footer</div>
+        </div>
+        <div class="menu_bottom hidden">
+          <div class="nav">
+            <ul>
+              <li>
+                <i class="fa-solid fa-house"></i>
+              </li>
+              <li>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </li>
+              <li>
+                <i class="fa-solid fa-user"></i>
+              </li>
+              <li>
+                <i class="fa-solid fa-bag-shopping"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=48fea13e9eefdd285a96504496d02e3b&libraries=services"></script>
+    <script src="js/main2.js"></script>
+  </body>
+</html>
