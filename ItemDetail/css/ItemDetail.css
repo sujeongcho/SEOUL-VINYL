@@ -25,11 +25,7 @@
 
 .contentsWrap{
     display: flex;
-    justify-content: center;
     width: 1340px;
-    margin-top: 150px;
-    
-    
 }
 
 
@@ -96,9 +92,42 @@
 }
 
 
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
 
-.itemImg > img{
-    width: 320px;
-    height:480px;
-    margin: 0px;
+.main-scroll-div {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.cover {
+    position: relative;
+    width: 90%;
+    height: 50%;
+}
+.scroll-image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.child {
+    height: 450px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.child-img {
+    /* width: 100%; */
+    height: 100%;
 }
