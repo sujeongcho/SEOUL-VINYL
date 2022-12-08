@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link href="https://webfontworld.github.io/sandbox/SBAggro.css" rel="stylesheet" />
     <title>Document</title>
 </head>
 
@@ -14,7 +15,7 @@
     <div class="container">
         <div class="top-bar">
             <ul class="top">
-                <li><img src="./logo.png" id="logo" alt="logo" /></li>
+                <li><img src="./img/logo.png" id="logo" alt="logo" /></li>
                 <li>로그인</li>
                 <li>장바구니</li>
                 <li>스토어</li>
@@ -24,15 +25,20 @@
         <div class="login-container">
             <div class="login-form">
                 <form class="login-form-form">
-                    <input type="text" name="email" class="text-field" placeholder="ID">
-                    <input type="password" name="password" class="text-field" placeholder="PASSWORD">
-                    <input type="submit" value="sign in" class="submit-btn">
+                    <p class="login_txt">
+                        로그인
+                    </p>
+                    <input type="text" name="email" class="text-field" placeholder="아이디">
+                    <input type="password" name="password" class="text-field" placeholder="비밀번호">
+                    <input type="submit" value="로그인" class="submit-btn">
                 </form>
+               
     
-                <div class="links">
-                    <a href="#">Forgot Your id?</a>
-                    <a href="#">Or Password?</a>
-                </div>
+                <span class="links">
+                    <a href="#">아이디찾기</a>
+                    <span>&emsp;&emsp;&emsp;&emsp;</span><a href="#">비밀번호 찾기</a>
+                </span>
+                
             </div>
         </div>
 </body>
