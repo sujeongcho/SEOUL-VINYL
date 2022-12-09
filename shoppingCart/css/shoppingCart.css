@@ -1,62 +1,62 @@
 @font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 
 * {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    font-family: "SB Aggro";
-    color: #343434;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "SB Aggro";
+  color: #343434;
 
-  }
-
-*, *:before, *:after{
-  box-sizing: border-box;
 }
 
-  html {
-    background-color: #f9f5f0;
-  }
+*, *:before, *:after{
+box-sizing: border-box;
+}
 
-  div{
-    display: block;
-  }
+html {
+  background-color: #f9f5f0;
+}
 
-  .container{
-    width: 1920px;
-  }
+div{
+  display: block;
+}
+
+.container{
+  width: 1920px;
+}
 
 
 
-  .top {
-    margin-left: 910px;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 350px 50px 64px 50px 20px;
-    gap: 50px;
-    align-items: center;
-  }
+.top {
+  margin-left: 910px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 350px 50px 64px 50px 20px;
+  gap: 50px;
+  align-items: center;
+}
 
-  #logo{
-    width: 100px;
-  }
-  .top li {
-    font-weight: 300;
-  }
+#logo{
+  width: 100px;
+}
+.top li {
+  font-weight: 300;
+}
 .top li:hover, .to li:hover{
-  color: #f85e24;
-  cursor: pointer;
+color: #f85e24;
+cursor: pointer;
 }
 
 .container {
-        width: 1920px;
-        
-      }
+      width: 1920px;
+      
+    }
 .ab{
 display: grid;
 justify-content: center;
@@ -64,23 +64,25 @@ align-items: center;
 }
 
 .contents-wrap{
-  padding: 30px;
-  width: 1360px;
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  justify-content: center;
-  gap: 40px;
-  
+padding: 30px;
+width: 1360px;
+display: grid;
+grid-template-columns: 1.5fr 1fr;
+justify-content: center;
+gap: 40px;
+
 }
 
+/*주문순서 안내*/
+
 .order-container{
-  padding: 10px;
+padding: 10px;
 }
 
 .order-header{
-  position: relative;
-  display: flex;
-  justify-content: space-between;
+position: relative;
+display: flex;
+justify-content: space-between;
 }
 
 .orderStep{
@@ -89,259 +91,288 @@ margin-top: 20px;
 }
 
 .orderStep li{
-  font-size: 12px;
-  display: flex;
-  flex-direction: row;
-  color: rgb(192, 192, 192);
+font-size: 12px;
+display: flex;
+flex-direction: row;
+color: rgb(192, 192, 192);
 }
 
 .orderStep li:after{
-  content: '\00a0\00a0\00a0\00a0>';
+content: '\00a0\00a0\00a0\00a0>';
 }
 
 
 .orderStep .active{
-  color: #f85e24;
+color: #f85e24;
 }
 
 .orderStep li::before{
-  content: "\00a0 \00a0 \00a0 \00a0";
+content: "\00a0 \00a0 \00a0 \00a0";
 }
 
 
 .orderStep li:last-child::after{
-  content: none;
+content: none;
 }
 
 .order-sub-header{
-  font-size: 12px;
-  display: flex;
-  justify-content: space-between;
+font-size: 12px;
+display: flex;
+justify-content: space-between;
 }
 
 .h_line1{
-  border-bottom: 1.5px solid rgb(192, 192, 192);
-  margin: auto;
+border-bottom: 1.5px solid rgb(192, 192, 192);
+margin: auto;
 }
 
-
+/*상품 인포메이션 헤더*/
 
 .pd-info-box{
-  width: 800px;
+width: 800px;
 }
 
 .pd-info-box-header th{
-  font-family: 'GmarketSansMedium';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-size: smaller;
-  color: rgb(192,192,192);
-  border-bottom: 1px solid RGB(192,192,192);
-  padding: 10px;
+font-family: 'GmarketSansMedium';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+font-size: smaller;
+color: rgb(192,192,192);
+border-bottom: 1px solid RGB(192,192,192);
+padding: 10px;
 }  
 
 
+/*체크박스*/
+
 .checkbox-td label{
-  cursor: pointer;
-  display: flex;
+cursor: pointer;
+display: flex;
+padding-right: none;
+
 }
 
 .checkbox-td input[type="checkbox"]{
-  cursor: pointer;
-  opacity: 0;
-  position: absolute;
+width: 20px;
+cursor: pointer;
+opacity: 0;
+position: absolute;
 }
 
 .checkbox-td label::before{
-  content: '';
-  width: 1.3em;
-  height: 1.3em;
-  border: .05em solid rgb(142, 142, 142);
+content: '';
+width: 1.3em;
+height: 1.3em;
+border: .05em solid rgb(142, 142, 142);
 
 } 
 
 .checkbox-td label:hover::before,
 .checkbox-td input[type='checkbox']:hover + label::before{
-  background-color: #f85e24;
+background-color: #f85e24;
 }
 
 .checkbox-td input[type='checkbox']:checked + label::before{
-  content: '';
-  background-color: #f85e24;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+content: '';
+background-color: #f85e24;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 
 .pd-info-box td{
-  font-size: 12px;
-  padding: 20px 20px 20px 20px;
-  border-bottom:1px solid rgb(192,192,192) ;
- 
+font-size: 12px;
+padding: 20px 20px 20px 20px;
+border-bottom:1px solid rgb(192,192,192) ;
+
 }
 .pd-info-box td:nth-child(1){
-  width: 100px;
+width: 100px;
 }
 .pd-info-box td:nth-child(4){
-  text-align: center;
+text-align: center;
 }
 .pd-info-box td:nth-child(5){
-  text-align: center;
+text-align: center;
 }
 
 .pd-delete{
-  width: 100px;
-  height: 25px;
-  font-family: 'GmarketSansMedium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-size: 12px;
-    background-color:transparent;
-    color: rgb(66, 66, 66);
-    border:1px solid rgb(145, 145, 145);
+width: 100px;
+height: 25px;
+font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-size: 12px;
+  background-color:transparent;
+  color: rgb(66, 66, 66);
+  border:1px solid rgb(145, 145, 145);
 
 }
 
 .pd-delete:hover{
-  background-color: #f85e24;
-  cursor: pointer;
-  color: white;
+background-color: #f85e24;
+cursor: pointer;
+color: white;
+border: none;
+}
+/*이미지 사이즈 조절*/
+img{
+  width: 180px;
+}
+
+.pd-info-box .pd_info{
+  font-size: 14px;
+}
+
+/* 수량 변경 버튼*/
+
+#moins, #plus, #count, #total_count_view{
   border: none;
+  background-color: transparent;
 }
 
 
-.minus, .plus{
+#total_count_view{
+  text-align: center;
+}
+
+
+#count{
+  width: 10px;
+}
+
+#moins, #plus{
   cursor: pointer;
-  font-size: larger;
 }
+
+
+
+
+
+/*계산, 주문 final*/
 
 .checkout{
-  font-size: 14px;
-  display: flex;
-  justify-content: flex-end;
+font-size: 14px;
+display: flex;
+justify-content: flex-end;
 }
 
 .chkout-box{
- width: 400px;
- padding: 20px; 
+width: 400px;
+padding: 20px; 
 }
 
 .chkout-items{
-  display: flex;
-  justify-content: space-between;
+display: flex;
+justify-content: space-between;
 }
 
 .shipping-fee{
-  display: flex;
-  justify-content: space-between;
+display: flex;
+justify-content: space-between;
 }
 
 .chkout-total{
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-between;
+padding-top: 10px;
+display: flex;
+justify-content: space-between;
 
 }
 
 .h-line2{
-  border-bottom: 1.5px solid rgb(192, 192, 192);
-  margin: auto;
-  padding: 4px;
+border-bottom: 1.5px solid rgb(192, 192, 192);
+margin: auto;
+padding: 4px;
 }
 
 
 .chkout-button{
-  
-  padding-top: 5px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-top: 10px;
+
+padding-top: 5px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+padding-top: 10px;
 }
 .chkout-button1{
-  font-family: 'GmarketSansMedium';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-size: 13px;
-  background-color: #f85e24;
-  height: 40px;
-  border: none;
-  color: white;
+font-family: 'GmarketSansMedium';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+font-size: 13px;
+background-color: #f85e24;
+height: 40px;
+border: none;
+color: white;
 }
 .chkout-button2{
-  font-family: 'GmarketSansMedium';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-size: 13px;
-  background-color: black;
-  height: 40px;
-  border: none;
-  color: white;
+font-family: 'GmarketSansMedium';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+font-size: 13px;
+background-color: black;
+height: 40px;
+border: none;
+color: white;
 }
 
 
 .wishlist{
-  padding: 10px;
-  background-color: rgba(238, 222, 189, 0.253);
-  width: 400px;
+padding: 10px;
+background-color: rgba(238, 222, 189, 0.253);
+width: 400px;
 }
 
 .w-title{
-  padding-left: 10px;
-  padding-top: 5px;
+padding-left: 10px;
+padding-top: 5px;
 }
 
 .wish-edit{
-  font-size:12px;
-  display: flex;
-  justify-content: flex-end;
+font-size:12px;
+display: flex;
+justify-content: flex-end;
 }  
 
 .h_line3{
-  border-bottom: 1.5px solid rgb(192, 192, 192);
-  margin: auto;
+border-bottom: 1.5px solid rgb(192, 192, 192);
+margin: auto;
 }
 
 .wish-items{
-  padding: 20px;
-  margin: 20px;
+padding: 20px;
+margin: 20px;
 }
 
 .wish-items img{
-  width: 145px;
-  padding: 10px;
-  will-change: transform;
-  transition: transform 450ms;
+width: 145px;
+padding: 10px;
+will-change: transform;
+transition: transform 450ms;
 }
 
 .wish-items img:hover {
-    transition: transform 125ms;
-    transform: translateY(-10px);
-    cursor: pointer;
-  }
+  transition: transform 125ms;
+  transform: translateY(-10px);
+  cursor: pointer;
+}
 
 
 
 
-  @media screen and (max-width:767px){ 
-    /* Mobile */
-  }
-  
-  @media screen and (min-width:768px) and (max-width: 1023px) {
-    /* Tablet */
-  }
-  
-  
-  @media screen and (min-width:1024px) {
-    /* Desktop */
-  }
+@media screen and (max-width:767px){ 
+  /* Mobile */
+}
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+  /* Tablet */
+}
 
 
-
-
-
+@media screen and (min-width:1024px) {
+  /* Desktop */
+}
 
