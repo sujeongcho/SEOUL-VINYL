@@ -6,19 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/shoppingCart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
     <title>Seoul Vinyl</title>
 </head>
 <body>
-    <div class="container">
-        <div class="top-bar">
-            <ul class="top">
-              <li><img src="../images/logo.png" id="logo" alt="logo" /></li>
-              <li>로그인</li>
-              <li>장바구니</li>
-              <li>스토어</li>
-              <li><i class="fa-solid fa-magnifying-glass"></i></li>
-            </ul>
-        </div>
+  <div class="container">
+    <div class="top-bar desktop">
+      <div class="logo-div">
+        <a href="main2.html"><img src="../images/logo.png" id="logo" alt="logo" /></a>
+      </div>
+      <div class="top-bar-list">
+        <ul class="top">
+          <li class="top_list">
+            <a href="">LOGIN</a>
+          </li>
+          <li class="top_list">
+            <a href=""> CART </a>
+          </li>
+          <li class="sesarch_li">
+            <i class="fa-solid fa-magnifying-glass search"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="top-bar mobile hidden">
+      <div class="logo-div">
+        <a href="main2.html"><img src="img/logo.png" id="logo" alt="logo" /></a>
+      </div>
+      <div class="top-bar-list">
+        <i class="ri-menu-line click_menu"></i>
+      </div>
+    </div>
+    <div class="warp">
+      <div class="contents">
         <br><br> <br> <br> <br>
         <div class="ab">
         <div class="contents-wrap">
@@ -49,7 +69,7 @@
                             <td class="joji-picture">
                                 <img src="../images/joji.jpeg" alt="Joji">
                             </td>
-                            <td class=pd_info> Joji - In Tongues </td>
+                            <td class="joji-title"> Joji - In Tongues </td>
                             <div class="input_div">
                             <td>
                                 <input type="button" value="-" id="moins" onclick="minus()">
@@ -70,7 +90,7 @@
                             </td>                            
                             <td><img src="../images/seongjin.jpeg" alt="seongjin">
                             </td>
-                            <td class="pd_info">조성진 - 제 17회 쇼팽 콩쿠르 우승 실황 앨범 [LP]</td>
+                            <td>조성진 - 제 17회 쇼팽 콩쿠르 우승 실황 앨범 [LP]</td>
                             <div class="input_div">
                               <td>
                                   <input type="button" value="-" id="moins" onclick="minus()">
@@ -91,7 +111,7 @@
                           <td>
                                <img src="../images/michaelseyer.jpeg" alt="">
                             </td>
-                            <td class="pd_info">Michael Seyer - A Good Fool</td>
+                            <td>Michael Seyer - A Good Fool</td>
                             <div class="input_div">
                               <td>
                                   <input type="button" value="-" id="moins" onclick="minus()">
@@ -146,17 +166,104 @@
               <div class="h_line3"></div>
 
               <div class="wish-items">
-                <img src="../images/bradmehldau.jpg" alt="bradmehldau">
-                <img src="../images/everythingbutthegirl.jpg" alt="everythingbutthegirl">
-                <img src="../images/juanamolina.jpg" alt="juanamolina">
-                <img src="../images/loveisyours.jpg" alt="loveisyours">
-                <img src="../images/sonnyboy.jpg" alt="sonnyboy">
+                <img src="../images/bradmehldau.jpg" alt="blonde">
+                <img src="../images/everythingbutthegirl.jpg" alt="sza">
+                <img src="../images/juanamolina.jpg" alt="">
+                <img src="../images/loveisyours.jpg" alt="">
+                <img src="../images/sonnyboy.jpg" alt="">
               </div>
               </div>
         </div>
         </div>
     </div>
-<script src="../js/shoppingCart.js"></script>
+<script src="../js/shoppingCart_test.js"></script>
 </body>
 </html>
-Footer
+        <div class="footer">footer</div>
+      </div>
+
+      <nav class="mobile_menu hidden">
+        <div class="right_icon"><i class="fa-solid fa-xmark x_mark"></i></div>
+        <div class="mobile_menu_list">NEW</div>
+        <div class="mobile_menu_list">
+          <div class="mobile_menu_header">
+            <ul>
+              <li>VINYL</li>
+              <li class="plus_icon"><i data-id="0" class="fa-solid fa-plus plus"></i></li>
+            </ul>
+          </div>
+          <div id="menu_0" class="mobile_menu_option hidden">
+            <ul>
+              <li class="mobile_menu_item">ALL</li>
+              <li class="mobile_menu_item">KOREAN</li>
+              <li class="mobile_menu_item">JAPANESE</li>
+              <li class="mobile_menu_item">JAZZ</li>
+              <li class="mobile_menu_item">ROCK/POP</li>
+              <li class="mobile_menu_item">ELECTRONICA</li>
+              <li class="mobile_menu_item">HIPHOP/SOUL</li>
+              <li class="mobile_menu_item">OST</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mobile_menu_list">
+          <div class="mobile_menu_header">
+            <ul>
+              <li>SOUND</li>
+              <li class="plus_icon"><i data-id="1" class="fa-solid fa-plus plus"></i></li>
+            </ul>
+          </div>
+          <div id="menu_1" class="mobile_menu_option hidden">
+            <ul>
+              <li class="mobile_menu_item">ALL</li>
+              <li class="mobile_menu_item">TURNTABLE</li>
+              <li class="mobile_menu_item">SOUND BAR</li>
+              <li class="mobile_menu_item">PLATER</li>
+              <li class="mobile_menu_item">ETC.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mobile_menu_list">
+          <div class="mobile_menu_header">
+            <ul>
+              <li>GOODs</li>
+              <li class="plus_icon"><i data-id="2" class="fa-solid fa-plus plus"></i></li>
+            </ul>
+          </div>
+          <div id="menu_2" class="mobile_menu_option hidden">
+            <ul>
+              <li class="mobile_menu_item">ALL</li>
+              <li class="mobile_menu_item">POSTER</li>
+              <li class="mobile_menu_item">CUP</li>
+              <li class="mobile_menu_item">TOP</li>
+              <li class="mobile_menu_item">ETC.</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="tab_menu_body menu_bottom hidden">
+        <div class="tab-menu">
+          <ul class="tab-menu__list">
+            <li class="tab-menu__item tab-menu__active">
+              <span class="tab-menu__icon"><i class="ri-home-line"></i></span>
+              <span class="tab-menu__text">HOME</span>
+            </li>
+
+            <li class="tab-menu__item">
+              <span class="tab-menu__icon"><i class="ri-search-line"></i></span>
+              <span class="tab-menu__text">SEARCH</span>
+            </li>
+
+            <li class="tab-menu__item">
+              <span class="tab-menu__icon"><i class="ri-shopping-cart-line"></i></span>
+              <span class="tab-menu__text">CART</span>
+            </li>
+
+            <li class="tab-menu__item">
+              <span class="tab-menu__icon"><i class="ri-user-line"></i></span>
+              <span class="tab-menu__text">MY PAGE</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
