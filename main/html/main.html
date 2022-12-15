@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main2.css" />
+    <link href="css/main2_mobile.css" rel="stylesheet" type="text/css" media="screen and (min-width:0px) and (max-width:768px)" />
+    <link href="css/main2.css" rel="stylesheet" type="text/css" media="screen and (min-width:769px)" />
     <link href="https://webfontworld.github.io/sandbox/SBAggro.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
 
     <!-- swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
@@ -27,6 +29,7 @@
             <li class="top_list">
               <a href=""> CART </a>
             </li>
+            <li class="top_list click_menu desktop_ham">MENU</li>
             <li class="sesarch_li">
               <i class="fa-solid fa-magnifying-glass search"></i>
             </li>
@@ -37,21 +40,21 @@
         <div class="logo-div">
           <a href="main2.html"><img src="img/logo.png" id="logo" alt="logo" /></a>
         </div>
-        <div class="top"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+        <div class="top-bar-list">
+          <i class="ri-menu-line click_menu"></i>
+        </div>
       </div>
       <div class="warp">
         <div class="menu">
           <div class="menu_list">
-            <a href="">
+            <a href="store.html">
               <h1 class="menu_header">NEW</h1>
             </a>
           </div>
           <div class="menu_list">
             <h1 class="menu_header">VINYL</h1>
             <div class="menu_contents hidden">
-              <a href="storekategorie.html">
-                <div class="menu_item">ALL</div>
-              </a>
+              <div class="menu_item">ALL</div>
               <div class="menu_item">KOREAN</div>
               <div class="menu_item">JAPANESE</div>
               <div class="menu_item">JAZZ</div>
@@ -114,43 +117,28 @@
               </div>
             </div>
             <div class="new">
-              <div class="new_left">
-                <h1 id="newEng">NEW</h1>
-                <h1 id="newKor">신상품</h1>
-                <p id="newText">오직 서울 바이닐에서만 만날 수 있는 다양한 신상품을 소개합니다.</p>
-                <div class="new_btn">
-                  <div id="new_pre_btn">
-                    <div>
-                      <i class="fa-solid fa-chevron-left"></i>
+              <div class="left_new">
+                <div class="new_left">
+                  <h1 id="newEng">NEW</h1>
+                  <h1 id="newKor">신상품</h1>
+                  <p id="newText">오직 서울 바이닐에서만 만날 수 있는 다양한 신상품을 소개합니다.</p>
+                  <div class="new_btn">
+                    <div id="new_pre_btn">
+                      <div>
+                        <i class="fa-solid fa-chevron-left"></i>
+                      </div>
                     </div>
-                  </div>
-                  <div id="new_next_btn">
-                    <div>
-                      <i class="fa-solid fa-chevron-right"></i>
+                    <div id="new_next_btn">
+                      <div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="new_right">
-                <div class="new_item_list">
-                  <div class="new_item">
-                    <img src="img/NEW.png" alt="" />
-                    <h1 id="new_title">TITEL</h1>
-                    <h1 id="new_singer">singer</h1>
-                    <h1 id="new_price">price</h1>
-                  </div>
-                  <div class="new_item">
-                    <img src="img/NEW.png" alt="" />
-                    <h1 id="new_title">TITEL</h1>
-                    <h1 id="new_singer">singer</h1>
-                    <h1 id="new_price">price</h1>
-                  </div>
-                  <div class="new_item">
-                    <img src="img/NEW.png" alt="" />
-                    <h1 id="new_title">TITEL</h1>
-                    <h1 id="new_singer">singer</h1>
-                    <h1 id="new_price">price</h1>
-                  </div>
+              <div class="right_new">
+                <div class="new_right new_Swiper">
+                  <div class="new_item_list swiper-wrapper"></div>
                 </div>
               </div>
             </div>
@@ -159,85 +147,11 @@
                 <h1>WEEKLY BEST</h1>
               </div>
               <div class="weekly_best_kategerie">
-                <div></div>
-                <div class="best_selection best_selected" id="best_vinyl">VINYL</div>
+                <div class="best_selection" id="best_vinyl">VINYL</div>
                 <div class="best_selection" id="best_sound">SOUND</div>
-                <div class="best_selection" id="best_goods">GOODs</div>
+                <div class="best_selection best_selected" id="best_goods">GOODs</div>
               </div>
-              <div class="best_item_list">
-                <div class="best_item">
-                  <img src="img/NEW.png" alt="" class="best_item_img" />
-                  <h1 class="best_item_title">title</h1>
-                  <h1 class="best_item_singer">singer</h1>
-                  <h1 class="best_item_price">price</h1>
-                </div>
-                <div class="best_item">
-                  <img src="img/NEW.png" alt="" class="best_item_img" />
-                  <h1 class="best_item_title">title</h1>
-                  <h1 class="best_item_singer">singer</h1>
-                  <h1 class="best_item_price">price</h1>
-                </div>
-                <div class="best_item">
-                  <img src="img/NEW.png" alt="" class="best_item_img" />
-                  <h1 class="best_item_title">title</h1>
-                  <h1 class="best_item_singer">singer</h1>
-                  <h1 class="best_item_price">price</h1>
-                </div>
-                <div class="best_item">
-                  <img src="img/NEW.png" alt="" class="best_item_img" />
-                  <h1 class="best_item_title">title</h1>
-                  <h1 class="best_item_singer">singer</h1>
-                  <h1 class="best_item_price">price</h1>
-                </div>
-                <div class="best_item">
-                  <img src="img/NEW.png" alt="" class="best_item_img" />
-                  <h1 class="best_item_title">title</h1>
-                  <h1 class="best_item_singer">singer</h1>
-                  <h1 class="best_item_price">price</h1>
-                </div>
-                <div class="best_item">
-                  <img src="img/NEW.png" alt="" class="best_item_img" />
-                  <h1 class="best_item_title">title</h1>
-                  <h1 class="best_item_singer">singer</h1>
-                  <h1 class="best_item_price">price</h1>
-                </div>
-                <div class="best_item">
-                  <img src="img/NEW.png" alt="" class="best_item_img" />
-                  <h1 class="best_item_title">title</h1>
-                  <h1 class="best_item_singer">singer</h1>
-                  <h1 class="best_item_price">price</h1>
-                </div>
-                <div class="best_item">
-                  <img src="img/NEW.png" alt="" class="best_item_img" />
-                  <h1 class="best_item_title">title</h1>
-                  <h1 class="best_item_singer">singer</h1>
-                  <h1 class="best_item_price">price</h1>
-                </div>
-                <div class="best_item">
-                  <img src="img/NEW.png" alt="" class="best_item_img" />
-                  <h1 class="best_item_title">title</h1>
-                  <h1 class="best_item_singer">singer</h1>
-                  <h1 class="best_item_price">price</h1>
-                </div>
-                <div class="best_item">
-                  <img src="img/NEW.png" alt="" class="best_item_img" />
-                  <h1 class="best_item_title">title</h1>
-                  <h1 class="best_item_singer">singer</h1>
-                  <h1 class="best_item_price">price</h1>
-                </div>
-                <div class="best_item">
-                  <img src="img/NEW.png" alt="" class="best_item_img" />
-                  <h1 class="best_item_title">title</h1>
-                  <h1 class="best_item_singer">singer</h1>
-                  <h1 class="best_item_price">price</h1>
-                </div>
-                <div class="best_item">
-                  <img src="img/NEW.png" alt="" class="best_item_img" />
-                  <h1 class="best_item_title">title</h1>
-                  <h1 class="best_item_singer">singer</h1>
-                  <h1 class="best_item_price">price</h1>
-                </div>
-              </div>
+              <div class="best_item_list"></div>
               <div class="store_view_more">
                 <h1>VIEW MORE</h1>
                 <div id="more_btn">
@@ -270,33 +184,144 @@
                 <div id="map"></div>
               </div>
             </div>
-            <div class="QnA">
-              
+          </div>
+          <div class="footer_mobile">
+            <h1 id="footer_header">서울 바이닐</h1>
+            <div class="sns">
+              <i class="ri-instagram-line"></i>
+              <i class="ri-facebook-circle-line"></i>
+              <i class="ri-phone-fill"></i>
+              <i class="ri-mail-line"></i>
+            </div>
+            <div id="inquiry">
+              <h1>문의</h1>
+              <h1>이용약관</h1>
+              <h1>개인정보처리방침</h1>
+              <h1>사업자정보확인</h1>
+            </div>
+            <div id="address">
+              <h1 id="footer_right_top">상호: 주식회사 서울바이닐(SEOUL VINYL Co.,Ltd) | 호스팅제공자: (주)식스샵</h1>
+              <h1>대표: 이진욱 | 개인정보관리책임자: 이진욱</h1>
+              <h1 id="">주소: 서울특별시 용산구 신흥로 30, 1층/2층 | 사업자등록번호: 713-81-02189</h1>
+              <h1>통신판매: 제2020-서울용산-2144호</h1>
             </div>
           </div>
-          <div class="footer">footer</div>
+          <div class="footer">
+            <div class="footer_left">
+              <h1 id="footer_header">서울 바이닐</h1>
+              <div class="sns">
+                <h1>instagram</h1>
+                <h1>facebook</h1>
+              </div>
+              <div class="Contact">
+                <h1 class="call">전화: 02-6348-3110</h1>
+                <h1 class="email">이메일: whatsupjin@hanmail.net</h1>
+              </div>
+            </div>
+            <div class="footer_right">
+              <div id="inquiry">
+                <h1>문의</h1>
+                <h1>이용약관</h1>
+                <h1>개인정보처리방침</h1>
+                <h1>사업자정보확인</h1>
+              </div>
+              <div id="address">
+                <h1 id="footer_right_top">
+                  상호: 주식회사 서울바이닐(SEOUL VINYL Co.,Ltd) | 호스팅제공자: (주)식스샵 | 대표: 이진욱 | 개인정보관리책임자: 이진욱
+                </h1>
+                <h1 id="">주소: 서울특별시 용산구 신흥로 30, 1층/2층 | 사업자등록번호: 713-81-02189 | 통신판매: 제2020-서울용산-2144호</h1>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="menu_bottom hidden">
-          <div class="nav">
-            <ul>
-              <li>
-                <i class="fa-solid fa-house"></i>
+
+        <nav class="mobile_menu hidden">
+          <div class="right_icon"><i class="fa-solid fa-xmark x_mark"></i></div>
+          <div class="mobile_menu_list">NEW</div>
+          <div class="mobile_menu_list">
+            <div class="mobile_menu_header">
+              <ul>
+                <li>VINYL</li>
+                <li class="plus_icon"><i data-id="0" class="fa-solid fa-plus plus"></i></li>
+              </ul>
+            </div>
+            <div id="menu_0" class="mobile_menu_option hidden">
+              <ul>
+                <li class="mobile_menu_item">ALL</li>
+                <li class="mobile_menu_item">KOREAN</li>
+                <li class="mobile_menu_item">JAPANESE</li>
+                <li class="mobile_menu_item">JAZZ</li>
+                <li class="mobile_menu_item">ROCK/POP</li>
+                <li class="mobile_menu_item">ELECTRONICA</li>
+                <li class="mobile_menu_item">HIPHOP/SOUL</li>
+                <li class="mobile_menu_item">OST</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mobile_menu_list">
+            <div class="mobile_menu_header">
+              <ul>
+                <li>SOUND</li>
+                <li class="plus_icon"><i data-id="1" class="fa-solid fa-plus plus"></i></li>
+              </ul>
+            </div>
+            <div id="menu_1" class="mobile_menu_option hidden">
+              <ul>
+                <li class="mobile_menu_item">ALL</li>
+                <li class="mobile_menu_item">TURNTABLE</li>
+                <li class="mobile_menu_item">SOUND BAR</li>
+                <li class="mobile_menu_item">PLATER</li>
+                <li class="mobile_menu_item">ETC.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mobile_menu_list">
+            <div class="mobile_menu_header">
+              <ul>
+                <li>GOODs</li>
+                <li class="plus_icon"><i data-id="2" class="fa-solid fa-plus plus"></i></li>
+              </ul>
+            </div>
+            <div id="menu_2" class="mobile_menu_option hidden">
+              <ul>
+                <li class="mobile_menu_item">ALL</li>
+                <li class="mobile_menu_item">POSTER</li>
+                <li class="mobile_menu_item">CUP</li>
+                <li class="mobile_menu_item">TOP</li>
+                <li class="mobile_menu_item">ETC.</li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="tab_menu_body menu_bottom hidden">
+          <div class="tab-menu">
+            <ul class="tab-menu__list">
+              <li class="tab-menu__item tab-menu__active">
+                <span class="tab-menu__icon"><i class="ri-home-line"></i></span>
+                <span class="tab-menu__text">HOME</span>
               </li>
-              <li>
-                <i class="fa-solid fa-magnifying-glass"></i>
+
+              <li class="tab-menu__item">
+                <span class="tab-menu__icon"><i class="ri-search-line"></i></span>
+                <span class="tab-menu__text">SEARCH</span>
               </li>
-              <li>
-                <i class="fa-solid fa-user"></i>
+
+              <li class="tab-menu__item">
+                <span class="tab-menu__icon"><i class="ri-shopping-cart-line"></i></span>
+                <span class="tab-menu__text">CART</span>
               </li>
-              <li>
-                <i class="fa-solid fa-bag-shopping"></i>
+
+              <li class="tab-menu__item">
+                <span class="tab-menu__icon"><i class="ri-user-line"></i></span>
+                <span class="tab-menu__text">MY PAGE</span>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=48fea13e9eefdd285a96504496d02e3b&libraries=services"></script>
-    <script src="js/main2.js"></script>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=48fea13e9eefdd285a96504496d02e3b&libraries=services"></script>
+  <script src="js/main2.js"></script>
 </html>
