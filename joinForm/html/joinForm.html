@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/join.css">
+    <link rel="stylesheet" href="./join.css">
     <link href="https://webfontworld.github.io/sandbox/SBAggro.css" rel="stylesheet" />
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
     <title>Seoul Vinyl</title>
@@ -14,7 +14,7 @@
     <div class="container">
         <div class="top-ber">
             <ul class="top">
-                <li><img src="../images/logo.png" id="logo" alt="logo" /></li>
+                <li><img src="logo.png" id="logo" alt="logo" /></li>
                 <li>로그인</li>
                 <li>장바구니</li>
                 <li>스토어</li>
@@ -27,37 +27,68 @@
                 <div class="hline"></div>
                 <div class="level">
                     <label for="name" class="name_label">name<span class="required">*</span></label>
-                        <input name="loginName" type="text" class="name" placeholder="name">
+                        <input name="loginName" type="text" class="name" >
                 </div>
                 <div class="level">
                     <label for="id" class="id_label">ID<span class="required">*</span></label>
-                        <input name="loginId" type="Id" class="id" placeholder="ID">
+                        <input name="loginId" type="Id" class="id"
                 </div>
                 <div class="level">
                     <label for="pw" class="pwrd_label">Password<span class="required">*</span></label>
-                        <input name="loginPw" type="password" class="pwrd" placeholder="password">
+                        <input name="loginPw" type="password" class="pwrd" 
                 </div>
                 <div class="level">
                     <label for="pwchk" class="pwchk_label">Password Check<span class="required">*</span></label>
-                        <input name="name" type="password" class="pwchk" placeholder="password check">
+                        <input name="name" type="password" class="pwchk"
                 </div>
                 <div class="level">
                     <label for="phone" class="phone_label">Phone Number<span class="required">*</span></label>
-                        <input name="loginId" type="Id" class="phone" placeholder="Phone Number">
+                        <input name="loginId" type="Id" class="phone" 
                 </div>
                 <div class="level">
                     <label for="address" class="address_label">Address<span class="required">*</span></label>
-                        <input name="loginId" type="Id" class="address" placeholder="Address">
+                        <input name="loginId" type="Id" class="address" 
+                        
                 </div>
                 <div class="level">
-                    <label for="zipcode" class="zipcode_label">Zipcode<span class="required">*</span></label>
-                        <input name="loginId" type="Id" class="zipcode" placeholder="Zipcode">
-                </div>
-                  <div class="level">
-
-                      <input type="submit" value="가입하기" class="btn">
-                  </div>  
+                    <label for="zipcode" class="zipcode_label">Detailed Address<span class="required">*</span></label>
+                        <input name="loginId" type="Id" class="zipcode" 
+ 
             </div>
+
+            <!--
+            <div class="agreebox">
+                <label for="agree_all">
+                    <span>모두 동의합니다</span>
+                </label>
+            </div>
+            <div class="agreebox_1">
+                <div class="agreebox">
+                    <label for="agree">
+                        <span>이용약관 동의<strong>(필수)</strong></span>
+                    </label>
+                </div>
+                <div class="agreebox">
+                     <label for="agree">
+                         <span>개인정보 수집, 이용 동의<strong>(필수)</strong></span>
+                     </label>
+                </div>
+                 <div class="agreebox">
+                     <label for="agree">
+                         <span>개인정보 이용 동의<strong>(필수)</strong></span>
+                     </label>
+                 </div>
+                <div class="agreebox">
+                     <label for="agree">
+                        <span>이벤트, 혜택정보 수신동의<strong class="select_disable">(선택)</strong></span>
+                     </label>
+                  </div>
+            </div>
+        </div>
+    -->
+        <div class="levellevel2">
+            <input type="submit" value="취소하기" class="btn">
+            <input type="submit" value="가입하기" class="btn">
         </div>
 <script src="../js/zipcode.js"></script>
 </body>
