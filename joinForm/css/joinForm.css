@@ -1,119 +1,159 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-    font-family:sans-serif;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family:sans-serif;
+
+}
+
+body {
+  background-image:#34495e;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "SBAggro";
+  color: #343434;
+}
   
-  }
-  
-  body {
-    background-image:#34495e;
-  }
-  
-  * {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    font-family: "SBAggro";
-    color: #343434;
-  }
-    
-  .container{
-    width: 1920px;
-  }
-  
-  
-  html {
-    background-color: #f9f5f0;
-  }
-  
-  .top {
-    margin-left: 910px;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 350px 50px 64px 50px 20px;
-    gap: 50px;
-    align-items: center;
-  }
-  
-  #logo {
-    width: 100px;
-  }
-  
-  .top li {
-    font-weight: 300;
-  }
-  
-  .top li:hover,
-  .top li i:hover {
-    color: #f85e24;
-    cursor: pointer;
-  }
-  
+.container{
+  width: 1920px;
+}
+
+
+html {
+  background-color: #f9f5f0;
+}
+
+.top {
+  margin-left: 910px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 350px 50px 64px 50px 20px;
+  gap: 50px;
+  align-items: center;
+}
+
+#logo {
+  width: 100px;
+}
+
+.top li {
+  font-weight: 300;
+}
+
+.top li:hover,
+.top li i:hover {
+  color: #f85e24;
+  cursor: pointer;
+}
 
 
 
-  /* login */
+
+/* login */
+
+.hline{
+  border-bottom: 1px solid rgb(158, 158, 158) ;
+  width: 800px;
+  margin-bottom: 30px;
+}
+.login_txt{
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.loginform{
+  display: flex;
+  margin: 200px;
   
-  .hline{
-    border-bottom: 1px solid rgb(158, 158, 158) ;
-    width: 980px;
-    margin-bottom: 30px;
-  }
-  .login_txt{
-    margin-bottom: 20px;
-    font-size: 40px;
-  }
   
-  .loginform{
-    display: flex;
-    margin: 200px;
-    
 }
 
 .textForm{
-    display: flex;
-    flex-direction: column; 
-    font-size: 20px;
-    
-  }
+  width: 300px;
+  margin: 40px;
+  display: flex;
+  flex-direction: column; 
+  font-size: 20px;
   
-  .textForm label{
-    font-weight: 100;
-    
-  }
+}
+
+.textForm label{
+  font-weight: 100;
   
-  .level{
-    margin: 30px 0px 30px 0px; 
-  }
+}
 
-  .textForm input{
-    width: 900px;
-    border: none;
-    background-color: transparent;
-    border-bottom: 1.5px solid #d3d3d3;
-    font-weight: 100;
-  }
+.level{
+  margin: 30px 0px 0px 0px; 
   
+}
 
-  .required{
-    color: red;
-  }
+.level2 {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.textForm input{
+  margin: 10px;
+  width: 800px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 3px solid #d3d3d3;
+  font-weight: 100;
+}
+
+
+.required{
+  color: red;
+}
+
+.textForm .btn{
+ margin: auto;
+  width: 290px;
+  outline:none;
+  font-size:16px;
+  height:50px;
+  border: none;
+  background-color: #f85e24;
+  color: white;
   
+} 
 
-  
+.login_metxt{
+  width: 700PX;
+  font-size: 30px;
+  margin-top:40px
+ 
+
+}
+
+.hlinee{
+  border-bottom: 1px solid rgb(158, 158, 158) ;
+  width: 600px;
+}
+
+.loginform{
+  display: block;
+ 
+}
 
 
 
+.agreebox_1{
+  border: 1px solid black;
+}
 
-  .textForm .btn{
-margin: auto;
-    width: 200px;
-    outline:none;
-    font-size:16px;
-    height:50px;
-    border: none;
-    background-color: #f85e24;
-    color: white;
-  } 
-  
+.levellevel2{
+  display: flex;
+  width: 800px;
+  margin: 20px;
+}
+
+.levellevel2 .btn{
+  width: 400px;
+}
